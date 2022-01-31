@@ -9,10 +9,10 @@ import retrofit2.http.*
 
 interface PostService {
 
-    @GET("/v2/product/ch/dynamicproductlist")
+    @GET("/v2/product/xxxx")
     fun getFlowersList(): Call<MultipleResourceModel>
 
-    @GET("/v2/product/ch/dynamicproductlist")
+    @GET("/v2/product/xxxx")
     fun getFlowersFilterList(@QueryMap(encoded = true) detailList: Map<String,String>): Call<MultipleResourceModel>
 
 }
