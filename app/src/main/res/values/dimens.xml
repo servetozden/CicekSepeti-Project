@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_margin">19dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="dialog_list_margin">24dp</dimen>
+    <dimen name="dialog_btn_margin">28dp</dimen>
+    <dimen name="dialog_btn_padding">5dp</dimen>
+    <dimen name="dialog_btn_min_width">36dp</dimen>
+    <dimen name="dialog_list_item_padding">9.6dp</dimen>
+    <dimen name="dialog_list_item_margin">8.8dp</dimen>
+
+</resources>

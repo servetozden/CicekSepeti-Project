@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CicekSepeti</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="seller">Satıcı:</string>
+    <string name="added_basket">Sepete Ekle</string>
+    <string name="login_and_signup">Giriş Yap &amp; Üye Ol</string>
+    <string name="not_signup">Üye Olmadan Devam Et</string>
+    <string name="filter_text">Filtrele</string>
+    <string name="filter_text_clear">Temizle</string>
+    <string name="filter_choose_item_search">Uygula</string>
+    <string name="product_size_text">Ürün</string>
+    <string name="place_holder_text">Gönderim yeri seçin</string>
+
+
+
+</resources>

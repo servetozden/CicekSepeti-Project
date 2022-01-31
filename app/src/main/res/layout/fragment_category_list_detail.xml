@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.example.ciceksepeti.viewmodel.MainViewModel" />
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            tools:context=".activity.MainActivity"
+            tools:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/logo_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.06" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineTransaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_end="5dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/logo_guideline_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.6" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/content_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.12" />
+
+            <TextView
+                android:id="@+id/textFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/filter_text"
+                app:layout_constraintTop_toBottomOf="@+id/logo_guideline"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textSize="28sp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/filter_text_clear"
+                app:layout_constraintTop_toTopOf="@+id/textFilter"
+                app:layout_constraintBottom_toBottomOf="@+id/textFilter"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_arrow"
+                app:layout_constraintTop_toTopOf="@+id/textFilter"
+                app:layout_constraintBottom_toBottomOf="@+id/textFilter"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_choose_all_flowers"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/content_guideline"
+                app:layout_constraintBottom_toTopOf="@+id/filterSearch"
+                app:layout_constraintVertical_bias="0.0"
+                tools:listitem="@layout/item_category_list_detail" />
+
+            <TextView
+                android:id="@+id/filterSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:padding="20dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="@string/filter_choose_item_search"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/background_gradient_orange"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
