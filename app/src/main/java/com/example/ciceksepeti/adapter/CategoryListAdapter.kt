@@ -49,8 +49,6 @@ class CategoryListAdapter (
             txtCategoryName = mView.findViewById<View>(R.id.txtCategoryName) as TextView
             constraintlayoutCategory = mView.findViewById(R.id.constraintlayoutCategory)
 
-
-
         }
     }
 
